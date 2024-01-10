@@ -1,0 +1,128 @@
+@media (max-width:1150px) {
+      .hero-right {
+            margin-right: 24px;
+      }
+}
+@media (max-width:1022px){
+      .price__right {
+            width: 350px;
+            height: 350px;
+      }
+}
+@media (max-width:950px) {
+      .hero-right {
+            width: 450px;
+            height: 450px;
+      }
+      .price-content{
+            padding: 0 20px;
+      }
+}
+
+
+
+@media (max-width:880px) {
+      .nav-list {
+            display: none;
+      }
+
+      .bars {
+            display: block;
+      }
+
+      .hero-right {
+            width: 350px;
+            height: 350px;
+      }
+}
+@media (max-width:840px){
+      .price-content{
+           flex-direction: column-reverse;
+           padding: 0 20px 40px 20px;
+      }
+      .price__right {
+            width: 440px;
+            height: 440px;
+      }
+      .price__left {
+            max-width: 100%;
+      }
+      
+}
+@media (max-width:790px) {
+      .hero-content {
+            flex-direction: column;
+      }
+
+      .hero-right {
+            width: 510px;
+            height: 510px;
+      }
+
+      .hero-left {
+            max-width: 100%;
+      }
+
+      .hero {
+            padding-top: 50px;
+      }
+}
+
+@media (max-width:680px) {
+      .about {
+            padding: 160px 0 120px;
+      }
+      .footer-bottom {
+            justify-content: space-between;
+            align-content: space-between;
+      }
+      .footer-bottom ul{
+            width: 30%;
+      }
+}
+@media (max-width:600px){
+      .footer-bottom ul{
+           width: calc(50% - 20px);
+      }
+}
+@media (max-width:550px) {
+      .hero-right {
+            width: 100%;
+            height: auto;
+            box-shadow: none;
+            margin-right: 0;
+      }
+}
+
+@media (max-width:500px) {
+      .nav {
+            flex-direction: column;
+            gap: 20px;
+      }
+
+      .nav-right {
+            width: 100%;
+            justify-content: space-between;
+      }
+      .about-title{
+            font-size: 45px;
+      }
+      .price__right {
+            width: 100%;
+            height: auto;
+            transform: translateY(-50px);
+      }
+      .price__left h1{
+            font-size: 32px;
+      }
+}
+@media (max-width:400px){
+      .footer-top{
+            flex-direction: column;
+            gap: 20px;
+      }
+      .footer-bottom ul{
+            width:100%;
+            text-align: center;
+       }
+}

@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      list-style: none;
+      text-decoration: none;
+}
+
+button {
+      border: none;
+}
+
+.container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 10px;
+}
+
+.line {
+      width: 100%;
+      height: 5px;
+      background: #FF7500;
+}
+
+.nav {
+      display: flex;
+      padding: 16px 0;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.logo {
+      display: block;
+      width: 227px;
+      height: 60px;
+}
+
+.logo:hover {
+      cursor: pointer;
+      opacity: .8;
+}
+
+.logo:active {
+      opacity: .6;
+}
+
+.logo img {
+      width: inherit;
+      height: inherit;
+}
+
+.nav-right {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+}
+
+.nav-list {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+}
+
+.nav-list a {
+      color: #000;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      transition: 0.3s;
+}
+
+.nav-list a::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 3px;
+      background: transparent;
+}
+
+.nav-list a.active::before {
+      background-color: #FF7500;
+}
+
+.nav-list a:hover {
+      color: #FF7500;
+}
+
+.nav-list a:hover::before {
+      background-color: #FF7500;
+}
+
+.nav-list a:active {
+      opacity: 0.6;
+}
+
+.base-btn {
+      padding: 12px 24px;
+      border-radius: 4px;
+      background: #FF7500;
+      color: #FFF;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.5px;
+}
+
+.base-btn:hover {
+      opacity: 0.8;
+      cursor: pointer;
+}
+
+.base-btn:active {
+      opacity: 0.6;
+}
+
+.bars {
+      display: none;
+}
+
+.hero {
+      background: #252420;
+}
+
+.hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.hero-left {
+      max-width: 387px;
+}
+
+.hero-left .line {
+      width: 80px;
+      margin-bottom: 40px;
+}
+
+.hero-left h1 {
+      margin-bottom: 24px;
+      color: #FFF;
+      font-family: Roboto Condensed;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 0.5px;
+}
+
+.hero-left p {
+      margin-bottom: 32px;
+      color: #FFF;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+}
+
+.hero-right {
+      transform: translateY(40px);
+      border-radius: 8px;
+      width: 510px;
+      height: 510px;
+      box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.60);
+}
+
+.hero-right img {
+      border-radius: inherit;
+      width: inherit;
+      height: inherit;
+}
+
+.about {
+      padding: 210px 0;
+}
+
+.about .line {
+      width: 80px;
+      margin-bottom: 24px;
+}
+
+.about-title {
+      margin-bottom: 72px;
+      color: #000;
+      font-family: Roboto Condensed;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 0.5px;
+      max-width: 435px;
+}
+
+.about-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(314px, 1fr));
+      gap: 40px;
+}
+
+.about-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.3s;
+
+}
+.about-col:hover .icon{
+      transform: rotateY(360deg);
+}
+.about-col .icon {
+      transition: 0.3s;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(255, 119, 0, 0.2);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin-bottom: 32px;
+}
+
+.about-col h3 {
+      margin-bottom: 12px;
+      color: #000;
+      font-family: Roboto Condensed;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 0.5px;
+}
+
+.about-col p {
+      color: #000;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+}
+
+.price {
+      padding-bottom: 160px;
+}
+
+.price-content {
+      border-radius: 12px;
+      background: #252420;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 64px;
+      align-items: center;
+}
+
+.price__left {
+      max-width: 440px;
+}
+
+.price__left h1 {
+      margin-bottom: 24px;
+      color: #FFF;
+      font-family: Roboto Condensed;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 0.5px;
+}
+
+.price__left div {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+}
+
+.price__left p {
+      color: #FFF;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+}
+
+.price__left p span {
+      color: #FF7500;
+      font-weight: 700;
+}
+
+.price__right {
+      width: 440px;
+      height: 440px;
+      transform: translateY(-80px);
+}
+
+.price__right img {
+      width: inherit;
+      height: inherit;
+}
+
+footer {
+      background: #F8F8F8;
+      padding: 56px 0;
+}
+
+.footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+}
+
+.footer-top .logo {
+      width: 227px;
+      height: 60px;
+}
+
+.footer-top .logo img {
+      width: inherit;
+      height: inherit;
+}
+
+.footer-icons {
+      display: flex;
+      gap: 16px;
+}
+
+.footer-icons svg:hover path {
+      fill: #FF7500;
+      cursor: pointer;
+}
+
+.footer-icons svg:active {
+      opacity: 0.6;
+}
+
+.footer-bottom {
+      margin-top: 64px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+
+.footer-bottom ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+}
+
+.footer-bottom ul a {
+      color: #252420;
+      font-size: 16px;
+      line-height: normal;
+}
+.footer-bottom ul a:hover {
+      color: #FF7500;
+}
+.footer-bottom ul a:active {
+      opacity: 0.6;
+}
